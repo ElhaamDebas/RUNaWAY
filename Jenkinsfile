@@ -7,9 +7,9 @@ pipeline {
 		AWS_ACCESS_KEY_ID     = credentials('Elhaam-aws-secret-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('Elhaam-aws-secret-access-key')
 		ARTIFACT_NAME = 'Dockerrun.aws.json'
-		AWS_S3_BUCKET = 'jenkies-run-s3'
-		AWS_EB_APP_NAME = 'online-runway-cicd'
-        AWS_EB_ENVIRONMENT_NAME = 'Onlinerunwaycicd-env'
+		AWS_S3_BUCKET = 'elhaam-belt2d2-artifacts-123456'
+		AWS_EB_APP_NAME = 'Elhaam-Belt2-artifacts-123456'
+        AWS_EB_ENVIRONMENT_NAME = '	Elhaambelt2artifacts123456-env'
         AWS_EB_APP_VERSION = "${BUILD_ID}"
 	}
 
@@ -18,7 +18,7 @@ pipeline {
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t elhaam578/RunWay:latest .'
+				sh 'docker build -t  elhaam578/runaway:latest .'
 			}
 		}
 
@@ -32,7 +32,7 @@ pipeline {
 		stage('Push') {
 
 			steps {
-				sh 'docker push elhaam578/RunWay:latest'
+				sh 'docker push  elhaam578/runaway:latest'
 			}
 		}
 
