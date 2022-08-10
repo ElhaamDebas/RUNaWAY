@@ -18,7 +18,7 @@ pipeline {
 		stage('Build') {
 
 			steps {
-				sh 'docker build -t  elhaam578/runaway:latest .'
+				sh 'docker build -t elhaam578/runaway:latest .'
 			}
 		}
 
@@ -32,7 +32,7 @@ pipeline {
 		stage('Push') {
 
 			steps {
-				sh 'docker push  elhaam578/runaway:latest'
+				sh 'docker push elhaam578/runaway:latest'
 			}
 		}
 
