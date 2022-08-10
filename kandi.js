@@ -814,7 +814,7 @@ function startGame() {
   player.reset();
   ticker = 0;
   stop = false;
-  score = 400;
+  score = 1000000;
   platformHeight = 2;
   platformLength = 15;
   gapLength = 0;
