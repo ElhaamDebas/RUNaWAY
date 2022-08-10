@@ -8,8 +8,8 @@ pipeline {
         AWS_SECRET_ACCESS_KEY = credentials('Elhaam-aws-secret-access-key')
 		ARTIFACT_NAME = 'Dockerrun.aws.json'
 		AWS_S3_BUCKET = 'elhaam-belt2d2-artifacts-123456'
-		AWS_EB_APP_NAME = 'Elhaam-docker'
-        AWS_EB_ENVIRONMENT_NAME = 'Elhaamdocker-env'
+		AWS_EB_APP_NAME = 'Elhaam-belt-exam'
+        AWS_EB_ENVIRONMENT_NAME = 'Elhaambeltexam-env'
         AWS_EB_APP_VERSION = "${BUILD_ID}"
 	}
 
