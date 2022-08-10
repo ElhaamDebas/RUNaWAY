@@ -4,8 +4,8 @@ pipeline {
 
 	environment {
 		DOCKERHUB_CREDENTIALS=credentials('elhaam-dockerhub-token')
-		AWS_ACCESS_KEY_ID     = credentials('elhaam-aws-secret-key-id')
-        AWS_SECRET_ACCESS_KEY = credentials('elhaam-aws-secret-access-key')
+		AWS_ACCESS_KEY_ID     = credentials('Elhaam-aws-secret-key-id')
+        AWS_SECRET_ACCESS_KEY = credentials('Elhaam-aws-secret-access-key')
 		ARTIFACT_NAME = 'Dockerrun.aws.json'
 		AWS_S3_BUCKET = 'jenkies-run-s3'
 		AWS_EB_APP_NAME = 'online-runway-cicd'
