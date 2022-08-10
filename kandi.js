@@ -621,7 +621,7 @@ function updatePlayer() {
  */
 function spawnSprites() {
   // increase score
-  score++;
+  score+10;
 
   // first create a gap
   if (gapLength > 0) {
