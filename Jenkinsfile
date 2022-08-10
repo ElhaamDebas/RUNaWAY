@@ -3,7 +3,7 @@ pipeline {
 	agent any
 
 	environment {
-		DOCKERHUB_CREDENTIALS=credentials('elhaam-dockerhub-tokennansalem88-dockerhub')
+		DOCKERHUB_CREDENTIALS=credentials('elhaam-dockerhub-token')
 		AWS_ACCESS_KEY_ID     = credentials('elhaam-aws-secret-key-id')
         AWS_SECRET_ACCESS_KEY = credentials('elhaam-aws-secret-access-key')
 		ARTIFACT_NAME = 'Dockerrun.aws.json'
